@@ -1,14 +1,35 @@
 {% render 'partials/head.liquid' %}
 
-<article>
-  <header>
-    <h1>Hallo</h1>
-    <p>mijn naam is</p>
-  </header>
+<article class="profile-card-example">
+      
+      <header class="profile-card-example-header">
+        
+        <h1>{{ person.name }}</h1>
+        
+        <p><em>FDND student</em></p>
+        
+        
+        
+      </header>
+  
+      <img src="assets\Squad1J-Jadon.JPG" alt="" width="800" height="800" class="profile-card-example-img"> <!--1st img-->
+      <img src="assets\Squad1J-Jadon.JPG" alt="" width="800" height="800" class="profile-card-example-img"> <!--placeholder 2nd img-->
+      <dl class="profile-card-example-dl">
+        <dt>HTML</dt>
+        <dd>🏆</dd>
+        
+        <dt>CSS</dt>
+        <dd>🏆</dd>
+        
+        <dt>JavaScript</dt>
+        <dd>🏆</dd>
+      </dl>
+  
+      <p>Ik word beter dan chatgpt!!! <br> Met HTML, CSS en JS kan ik vette, interactieve web apps maken.</p>
+      
+    </article>
 
-  <p>{{ person.name }}</p>
-
-  <footer></footer>
-</article>
+    <script src="scripts/script.js"></script>
+    
 
 {% render 'partials/foot.liquid' %}
