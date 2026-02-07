@@ -1,10 +1,9 @@
 {% render 'partials/head.liquid' %}
 
 
-  <main>
-      <article class="profile-card">
-            
-            <article class="profile-card">
+  <main class="profile-card">
+           
+      
               
               <section class="left">
                 <h1>FDND Kaart</h1>
@@ -23,12 +22,14 @@
               </section>
               
               <section class="eigen-velden">
+                <h3>Bio</h3>
                 <p>Hobby:</p>
                 <p class="info">{{ person.custom.hobby }}</p> 
                 <img src="public/assets/Squad1J-Jadon.JPG" alt="">
               <details><summary>Data</summary><pre>{{ person | json:4 }}</pre></details>
             </section>
       
+         
   </main>      
 
 {% render 'partials/foot.liquid' %}
